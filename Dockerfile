@@ -10,7 +10,4 @@ USER node
 
 RUN npm install && npm cache clean --force --loglevel=error
 
-COPY --chown=node:node index.js .
-COPY --chown=node:node lib ./lib/
-
 CMD [ "node", "index.js"]
