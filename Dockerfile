@@ -7,4 +7,4 @@ USER root
 
 RUN npm install && npm cache clean --force --loglevel=error
 
-CMD [ "node", "index.js"]
+CMD [ "node", "main.js"]
