@@ -1,7 +1,5 @@
 FROM node:12-alpine 
 
-RUN mkdir /home/node/app/ && chown -R node:node /home/node/app
-
 WORKDIR /home/node/app
 
 
