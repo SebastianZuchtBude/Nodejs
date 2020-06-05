@@ -5,7 +5,7 @@ RUN mkdir /home/node/app/ && chown -R node:node /home/node/app
 WORKDIR /home/node/app
 
 
-USER node
+USER root
 
 RUN npm install && npm cache clean --force --loglevel=error
 
