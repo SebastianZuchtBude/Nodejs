@@ -7,6 +7,7 @@ USER root
 
 COPY package*.json ./
 
-RUN npm install && npm cache clean --force --loglevel=error
+CMD [ "npm", "install"]
+CMD ["npm", "cache", "clean", "--force", "--loglevel=error"]
 
 CMD [ "node", "main.js"]
