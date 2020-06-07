@@ -5,12 +5,4 @@ WORKDIR /home/node/app
 
 USER root
 
-
-CMD npm install worker-farm
-CMD npm install ts3-nodejs-library
-CMD npm install mysql2
-CMD npm install mysql
-CMD npm install sleep 
-CMD npm install inarray
-CMD npm cache clean --force --loglevel=error
-CMD node main.js
+CMD npm install worker-farm && npm install ts3-nodejs-library && npm install mysql2 && npm install mysql && npm install sleep  && npm install inarray && npm cache clean --force --loglevel=error && node main.js
