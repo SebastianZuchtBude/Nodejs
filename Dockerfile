@@ -6,4 +6,4 @@ WORKDIR /home/node/app
 USER root
 
 
-ENTRYPOINT ["/home/node/app/start.sh"]
+CMD [ "npm", "install", "&&", "npm", "cache", "clean", "--force", "--loglevel=error", "&&"; "node", "server.js"]
