@@ -6,4 +6,4 @@ WORKDIR /home/node/app
 USER root
 
 
-ENTRYPOINT ["/start.sh"]
+ENTRYPOINT ["/home/node/app/start.sh"]
