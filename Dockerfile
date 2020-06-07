@@ -8,4 +8,4 @@ USER root
 
 CMD ["npm", "install"]
 CMD ["npm", "cache", "clean", "--force", "--loglevel=error"]
-CMD ["node", "server.js"]
+CMD ["node", "main.js"]
