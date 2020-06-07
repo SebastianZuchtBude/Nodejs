@@ -6,4 +6,4 @@ WORKDIR /home/node/app
 USER root
 
 
-CMD [ "npm", "install", "&&", "npm", "cache", "clean", "--force", "--loglevel=error", "&&"; "node", "server.js"]
+CMD [ "npm", "install", "&&", "npm", "cache", "clean", "--force", "--loglevel=error", "&&", "node", "server.js"]
