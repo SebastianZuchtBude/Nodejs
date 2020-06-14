@@ -1,12 +1,9 @@
-FROM node:14.4.0-buster
+FROM node:14.4.0-alpine
 
 WORKDIR /home/node/app
 USER root
-RUN apk add --update-cache \
-    python \
-    python-dev \
-    py-pip \
-    build-base \
+RUN apk --no-cache add --virtual native-deps \
+  g++ gcc libgcc libstdc++ linux-headers make python
 
 
 
