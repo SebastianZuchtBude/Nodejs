@@ -1,4 +1,4 @@
-FROM 14.4.0-buster
+FROM node:14.4.0-buster
 
 WORKDIR /home/node/app
 USER root
