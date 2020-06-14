@@ -2,6 +2,11 @@ FROM node:10.16.0-alpine
 
 WORKDIR /home/node/app
 
+RUN apk add --update-cache \
+    python \
+    python-dev \
+    py-pip \
+    build-base \
 
 USER root
 
